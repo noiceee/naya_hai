@@ -1,31 +1,25 @@
 <html>
 
 <head>
-    <title>Doreamon Notes app</title>
+    <title>Doraemon Notes app</title>
     <link rel='stylesheet' href='style.css' />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div id="sidebar" class="side-nav" >
+    <div id="sidebar" class="side-nav">
         <div class="toggle-btn" onclick="togglemenu()">
-           
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <p>Your Notes</p>
+        <p class="sidebar-header">Your Notes</p>
         <div id="notesDiv">
         </div>
     </div>
     <div class="main">
         <div class="main-container">
             <div class="header">
-
                 <input type="text" class="txtHeader" id="txtHeader" placeholder="Enter title here" />
             </div>
             <div class="content">
@@ -35,12 +29,10 @@
             <button id="submitBtn">Save</button>
             <button id="updateBtn" style="display: none;">Update</button>
             <div class="options">
-                <center>
-                    <button onclick="changeStyle('b')" class="btn1"><i class="fa-solid fa-b"></i></button>
-                    <button onclick="changeStyle('i')" class="btn2"><i>I</i></button>
-                    <button onclick="changeStyle('u')" class="btn3"><i class="fa-regular fa-underline"></i></button>
-                    <button onclick="changeStyle('n')" class="btn4">n</button>
-                </center>
+                <button onclick="changeStyle('b')" class="styleBtn"><i class="fa-solid fa-b"></i></button>
+                <button onclick="changeStyle('i')" class="styleBtn"><i>I</i></button>
+                <button onclick="changeStyle('u')" class="styleBtn"><i class="fa-solid fa-underline"></i></button>
+                <button onclick="changeStyle('n')" class="styleBtn">n</button>
             </div>
 
         </div>
@@ -52,4 +44,5 @@
 </body>
 
 <script src="./main.js"></script>
+
 </html>
